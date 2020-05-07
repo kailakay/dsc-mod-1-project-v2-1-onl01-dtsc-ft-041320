@@ -14,44 +14,43 @@ def add_columns(x, y):
     
 # Genre Functions
 
-def gross(keyword, df):
+def gross(keyword, dfName):
     gross = 0
-    for i in df.index:
-        if any(keyword in g for g in df['genresList'][i]):
-            gross += (df['domestic_gross'][i])
+    for i in dfName.index:
+        if any(keyword in g for g in dfName['genresList'][i]):
+            gross += (dfName['domestic_gross'][i])
     return(gross)
 
-def count(keyword, df):
+def count(keyword, dfName):
     count = 0
-    for i in df.index:
-        if any(keyword in g for g in df['genresList'][i]):
+    for i in dfName.index:
+        if any(keyword in g for g in dfName['genresList'][i]):
             count += 1
     return(count)
 
-def meanGross(keyword, df):
-    genreGross = gross(keyword, df)
-    genreCount = count(keyword, df)
+def meanGross(keyword, dfName):
+    genreGross = gross(keyword, dfName)
+    genreCount = count(keyword, dfName)
     mean = genreGross/genreCount
     return mean
 
-def budget(keyword, df):
+def budget(keyword, dfName):
     budget = 0
-    for i in df.index:
-        if any(keyword in g for g in df['genresList'][i]):
-            budget += (df['production_budget'][i])
+    for i in dfName.index:
+        if any(keyword in g for g in dfName['genresList'][i]):
+            budget += (dfName['production_budget'][i])
     return(budget)
 
-def meanBudget(keyword, df):
-    genreBudget = budget(keyword, df)
-    genreCount = count(keyword, df)
+def meanBudget(keyword, dfName):
+    genreBudget = budget(keyword, dfName)
+    genreCount = count(keyword, dfName)
     mean = genreBudget/genreCount
     return mean
 
-def returnRate(keyword):
-    gross = meanGross(keyword)
-    budget = meanBudget(keyword)
-    increase = gross - budget
-    returnRate = (increase/budget) * 100
+def meanReturnRate(keyword, dfName):
+    gross = meanGross(keyword, dfName)
+    budget = meanBudget(keyword, dfName)
+    returnRate = (gross/budget) * 100
     return returnRate
 
 # Column Functions
@@ -67,6 +66,12 @@ def countNewCol(dfName, columnName):
     for val in dfName[columnName]:
         newCount.append(len(val))
     return(newCount)
+
+def removeFirstLastChar(dfName, columnName, char1, char2):
+    newCol = []
+    for val in dfName[columnName]:
+        newCol.append(val.replace(char1, '').replace(char2, ''))
+    return(newCol)
 
 
 
