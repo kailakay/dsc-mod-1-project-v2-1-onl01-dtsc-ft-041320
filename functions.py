@@ -13,7 +13,7 @@ def add_columns(x, y):
         return 0
     
 # Genre Functions
-
+    (Domestic)
 def gross(keyword, dfName):
     gross = 0
     for i in dfName.index:
@@ -49,6 +49,32 @@ def meanBudget(keyword, dfName):
 
 def meanReturnRate(keyword, dfName):
     gross = meanGross(keyword, dfName)
+    budget = meanBudget(keyword, dfName)
+    returnRate = (gross/budget) * 100
+    return returnRate
+
+# Genre Functions -Worldwide
+def grossWW(keyword, dfName):
+    gross = 0
+    for i in dfName.index:
+        if any(keyword in g for g in dfName['genresList'][i]):
+            gross += (dfName['worldwide_gross'][i])
+    return(gross)
+
+def meanGrossWW(keyword, dfName):
+    genreGross = grossWW(keyword, dfName)
+    genreCount = count(keyword, dfName)
+    mean = genreGross/genreCount
+    return mean
+
+def getMeanGrossWW(genreList, dfName):
+    data = []
+    for i in genreList:
+        data.append(meanGrossWW(i, dfName))
+    return data
+
+def meanReturnRateWW(keyword, dfName):
+    gross = meanGrossWW(keyword, dfName)
     budget = meanBudget(keyword, dfName)
     returnRate = (gross/budget) * 100
     return returnRate
