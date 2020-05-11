@@ -35,7 +35,7 @@ List of Files:</summary>
 
 ### Main Questions:
 
-[Question 1 Notebook Link]()
+[Question 1 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%203%20P.ipynb)
 <details><summary style="font-size: 24px">
 Question 1: {What are the most popular genres?} </summary> 
 
@@ -133,7 +133,7 @@ While financial information does not showcase the entire picture in terms of suc
 
 </details>
 <!------------------------------------------>
-[Question 3 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%203.ipynb)
+[Question 3 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%203%20P.ipynb)
 
 <details><summary style="font-size: 24px">
 Question 3: {Does crew size have an impact on a films success?} </summary> 
