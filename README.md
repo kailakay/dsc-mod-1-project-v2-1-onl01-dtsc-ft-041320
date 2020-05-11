@@ -35,7 +35,7 @@ List of Files:</summary>
 
 ### Main Questions:
 
-[Question 1 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%203%20P.ipynb)
+[Question 1 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%201%20L.ipynb)
 <details><summary style="font-size: 24px">
 Question 1: {What are the most popular genres?} </summary> 
 
