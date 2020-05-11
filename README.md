@@ -3,10 +3,11 @@
 
 <img src='images/Wonder_Woman_(2017_film).jpg' width = '%' />
 
-blog link
-link to video recording
-presentation pdf relative path
+[Medium Blog Post](https://medium.com/@kekay0528/my-first-data-science-project-94aa5b02709d)
 
+[Presentation PDF](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Microsoft%20Movie%20Studio%20Presentation.pdf)
+
+[Video Walkthrough](https://voicethread.com/share/14445223/)
 
 ## Purpose
 Microsoft has hired a team of green Data Scientists to evaluate various aspects of the movie industry in the hopes of finding their next big venture. Armed with a few starter data sets on box office information, we are tasked to perform preliminary analysis and interpret what types of movies Microsoft Studios should focus on creating. 
@@ -31,8 +32,10 @@ List of Files:</summary>
 ```
 </details>
 <!------------------------------------------>
+
 ### Main Questions:
 
+[Question 1 Notebook Link]()
 <details><summary style="font-size: 24px">
 Question 1: {What are the most popular genres?} </summary> 
 
@@ -48,7 +51,6 @@ In order to fully explore the popularity of genre, we wanted to answer three sub
 
 ```
 |The Movie Database - tmdb.movies.csv.gz
-|
 ```
 #### EDA
 
@@ -56,13 +58,13 @@ Utilizing *The Movie Database* dataset, we were able to extract genre ID keys an
 
 We then used this quanititative popularity score per movie and extracted the respective genres. After grouping the data by genre, we then calculated the mean popularity of our correlated data set to create the table below. 
 
-<img src='images/q1-genre-pop-all.png' width='80%' height='80%'/>
+<img src='images/q1-genre-pop-all.png'/>
 
 We filtered that data down to the top 9 genres, and compared them side by side in a boxen chart with a scattered bar chart. These two charts allowed us to visualize the data most comprehensively.
 
 *On the left plot, the black lines show the median while the blue line shows the mean.*
 
-<img src='images/q1-top-9-genre-pop.png' width='80%' height='80%'/>
+<img src='images/q1-top-9-genre-pop.png'/>
 
 Finally, we linked this data with our cleaned finance data, which allowed us to look directly at the finance information of the most popular genres.  
 
@@ -79,9 +81,10 @@ While we do not recommend basing business decisions solely off of the popularity
 </details>
 
 <!------------------------------------------>
+[Question 2 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%202.ipynb)
 
 <details><summary style="font-size: 24px">
-Question 2: {What are the top performing genres financially?} </summary> 
+Question 2:  {What are the top performing genres financially?} </summary> 
 
 ```
 In order to fully explore the aspects of crew on film success, we wanted to answer two sub-questions:
@@ -130,6 +133,7 @@ While financial information does not showcase the entire picture in terms of suc
 
 </details>
 <!------------------------------------------>
+[Question 3 Notebook Link](https://github.com/kailakay/dsc-mod-1-project-v2-1-onl01-dtsc-ft-041320/blob/master/Question%203.ipynb)
 
 <details><summary style="font-size: 24px">
 Question 3: {Does crew size have an impact on a films success?} </summary> 
